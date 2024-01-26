@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.genre-main-div{
+    /* height: 10rem; */
+    background-color:transparent;
+    padding: 2.7rem;
+    padding-left: 3.6rem;
+    
+}
+
+.genre-heading{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.genre-image-view{
+    margin-top: 1rem;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.genre-image-view img{
+    border-radius: 6px;
+    margin-right: 1.3rem;
+    max-width: 14.8rem;
+}
+
+.genre-image-view::-webkit-scrollbar{
+    display: none;
+}
