@@ -27,6 +27,10 @@
     max-width: 14.8rem;
 }
 
+.genre-image-view img:hover{
+    transform: scale(1.1);
+}
+
 .genre-image-view::-webkit-scrollbar{
     display: none;
 }
