@@ -1,0 +1,56 @@
+.view-port{
+    position:fixed;
+    background-color:rgba(0, 0, 0, 0.4) ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.videoplay-modal{
+    width: 55%;
+    height: 90vh;
+    overflow-y: scroll;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    border-radius: 8px;
+}
+
+
+.videoplay-modal::-webkit-scrollbar{
+    display: none;
+}
+
+.gradient-modal-end{
+    background-color:#141414;
+    padding: 1.6rem;
+    
+}
+
+.modal-close{
+    position: fixed;
+    top: 12%;
+    right: 19.5%;
+   
+}
+
+.close-btn{
+    border-radius: 50%;
+}
+
+.close-btn:active{
+    border:4px solid white;
+}
+
+.movie-title{
+    font-size: 1.7rem;
+    text-shadow: 1px 1px white;
+}
+
+.movie-overview{
+    font-size:0.99rem;
+    color: rgba(255,255,255,0.9);
+}

@@ -2,10 +2,32 @@ import { IoMdNotificationsOutline } from "react-icons/io";
 import { RiSearchLine } from "react-icons/ri";
 import { FaCaretDown } from "react-icons/fa";
 import './navbar.css'
+import { useEffect, useState } from "react";
 
 function Navbar(){
+
+    const [scroll , setScroll] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const isScrolled = window.scrollY > 300;
+            setScroll(isScrolled);
+        }
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
+        }
+    });
+
+    const navStyle = {
+        backgroundColor: scroll ? 'rgb(20, 20, 20)' : 'transparent',
+        transition: 'background-color 0.3s ease',
+    }
+
     return(
-        <nav className="navbar h-18 w-100  px-4 " >
+        <nav className="navbar h-18 w-100  px-4 " style={navStyle} >
             <div className="flex">
                 <div className="md:pl-8">
                     <img className="h-16" src="/images/Netflix-logo.png" alt="logo"/>            
